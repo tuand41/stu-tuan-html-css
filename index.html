@@ -6,34 +6,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/4977667528.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Let's talk!</title>
+    <script>
+        $(document).ready(function(){
+            $("i.fa-bars").click(function(){
+                $("nav.mobile").slideToggle("slow");
+            });
+            // $("li.drop-click").click(function(){
+            //     $("ul.mobile-drop-ct").slideToggle("slow");
+            // });
+        });
+    </script>
 </head>
 
 <body>
-    <div class="banner row">
-        <nav class="row">
-            <div class="logo">
+    <div class="banner">
+        <div class="banner-container container row">
+            <nav class="desk">
+                <div class="logo">
+                    <a href="#"><img src="img/stunited-e15650013362301.png" alt="#"></a>
+                </div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li class="drop-hover">
+                        <a href="#">WHAT WE DO</a>
+                        <ul class="drop-content">
+                            <li><a href="#">ST SOFTWARE</a></li>
+                            <li><a href="#">ST DIGITAL</a></li>
+                            <li><a href="#">ST INCUBATION</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WHO WE ARE</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">JOIN US</a></li>
+                    <li><a href="#">LETS TALK</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-mobile">
+            <div class="header-mob row">
+                <i class="fas fa-bars"></i>
                 <a href="#"><img src="img/stunited-e15650013362301.png" alt="#"></a>
             </div>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><div class="drop-hover">
-                    <a href="#" class="btndrop">WHAT WE DO</a>
-                    <div class="drop-content">
-                        <a href="#">ST SOFTWARE</a>
-                        <a href="#">ST SOFTWARE</a>
-                        <a href="#">ST SOFTWARE</a>
-                    </div>
-                </div></li>
-                <li><a href="#">WHO WE ARE</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">JOIN US</a></li>
-                <li><a href="#">LETS TALK</a></li>
-            </ul>
-        </nav>
+            <nav class="mobile">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li class="drop-click"><a href="">WHAT WE DO</a></li>
+                    <ul class="mobile-drop-ct">
+                        <li><a href="">ST SOFTWARE</a></li>
+                        <li><a href="">ST DIGITAL</a></li>
+                        <li><a href="">ST INCUBATION</a></li>
+                    </ul>
+                    <li><a href="">WHO WE ARE</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">JOIN US</a></li>
+                    <li><a href="">LET'S TALK</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="caption">
-            <h1 style="text-align: center;">Let's talk</h1>
-            <h2 style="text-align: center;">Stay in touch with us</h2>
+            <h1>Let's talk</h1>
+            <h2>Stay in touch with us</h2>
         </div>
     </div>
     <div class="content">
@@ -101,13 +136,16 @@
                     <ul>
                         <li><i class=""></i>14, An Thuong 18, Da Nang</li>
                         <li><i class=""></i>Call us +84 905 610 229</li>
-                        <li><i class=""></i><a href="#">info@stdsoftware.com</a></li>                        
+                        <li><i class=""></i><a href="#">info@stdsoftware.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="fb col-4">
                 <div class="">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fstunited.vn%2F&tabs=timeline&width=340&height=200px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="200px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fstunited.vn%2F&tabs=timeline&width=340&height=200px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="340" height="200px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
