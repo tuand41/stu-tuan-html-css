@@ -10,12 +10,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Let's talk!</title>
     <script>
-        $(document).ready(function(){
-            $("i.fa-bars").click(function(){
+        $(document).ready(function () {
+            $("i.fa-bars").click(function () {
                 $("nav.mobile").slideToggle("slow");
             });
-            // $("li.drop-click").click(function(){
-            //     $("ul.mobile-drop-ct").slideToggle("slow");
+            $("a.drop-click").click(function (event) {
+                event.stopPropagation();
+                $("ul.mobile-drop-ct").slideToggle("slow");
+            });
+            // $("a.drop-click").click(function () {
+            //    
+            //     $("ul.mobile-drop-ct").toggleClass("display");
             // });
         });
     </script>
@@ -53,12 +58,17 @@
             <nav class="mobile">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li class="drop-click"><a href="">WHAT WE DO</a></li>
-                    <ul class="mobile-drop-ct">
-                        <li><a href="">ST SOFTWARE</a></li>
-                        <li><a href="">ST DIGITAL</a></li>
-                        <li><a href="">ST INCUBATION</a></li>
-                    </ul>
+                    <li>
+                        <div class="mob-click">
+                            <a class="drop-click" href="">WHAT WE DO</a>
+                        </div>
+                        <ul class="mobile-drop-ct">
+                            <li><a href="">ST SOFTWARE</a></li>
+                            <li><a href="">ST DIGITAL</a></li>
+                            <li><a href="">ST INCUBATION</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="">WHO WE ARE</a></li>
                     <li><a href="">PORTFOLIO</a></li>
                     <li><a href="">JOIN US</a></li>
