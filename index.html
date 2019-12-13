@@ -14,7 +14,7 @@
             $("i.fa-bars").click(function () {
                 $("nav.mobile").slideToggle("slow");
             });
-            $("a.drop-click").click(function (event) {
+            $("#click-drop").click(function (event) {
                 event.stopPropagation();
                 $("ul.mobile-drop-ct").slideToggle("slow");
             });
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <div class="banner">
+    <div class="banner">    
         <div class="banner-container container row">
             <nav class="desk">
                 <div class="logo">
@@ -58,17 +58,18 @@
             <nav class="mobile">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li>
-                        <div class="mob-click">
-                            <a class="drop-click" href="">WHAT WE DO</a>
-                        </div>
-                        <ul class="mobile-drop-ct">
-                            <li><a href="">ST SOFTWARE</a></li>
-                            <li><a href="">ST DIGITAL</a></li>
-                            <li><a href="">ST INCUBATION</a></li>
-                        </ul>
-                    </li>
-
+                    <div id="click-drop">
+                        <li >
+                            <div class="mob-click">
+                                <a class="drop-click" href="javascript:void(0)">WHAT WE DO</a>
+                            </div>
+                            <ul class="mobile-drop-ct">
+                                <li><a href="">ST SOFTWARE</a></li>
+                                <li><a href="">ST DIGITAL</a></li>
+                                <li><a href="">ST INCUBATION</a></li>
+                            </ul>
+                        </li>
+                    </div>
                     <li><a href="">WHO WE ARE</a></li>
                     <li><a href="">PORTFOLIO</a></li>
                     <li><a href="">JOIN US</a></li>
